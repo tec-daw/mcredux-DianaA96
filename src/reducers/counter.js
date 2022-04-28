@@ -17,7 +17,7 @@ const counterReducer = (
             return {
                 ...state, // Destructuramos state en el return para devolver los 
                           // valores con cambios y el resto del objeto sin cambios.
-                counter: state.counter - 1
+                counter: state.counter - action.payload
             }
         }
         default: {
