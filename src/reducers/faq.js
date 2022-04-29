@@ -38,7 +38,7 @@ const faqReducer = (
 
         case 'EDIT_ONE_FAQ': {
             let newArrFaqs = []
-            newArrFaqs = state.faqs
+            newArrFaqs = [...state.faqs]
             newArrFaqs[action.payload.idx] = action.payload.editedFaq
             return {
                 ...state,
